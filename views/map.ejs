@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <%include index.ejs %>
+  <head>
+
+
+<body>
+
+<h1>South Africa</h1>
+
+<div id="map"></div>
+
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(-35.3500,30.0000), zoom: 5
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhv-OyUjf94_Qgf8YjDojYFY6NsDXlV64&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+  </head>
+</html>
